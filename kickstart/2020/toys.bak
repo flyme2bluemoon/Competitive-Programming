@@ -1,0 +1,47 @@
+T = int(input())
+
+def is_indefinite(the_number_of_toys, the_toys, the_total_enjoyment):
+    total_enjoyment = sum([toy[0] for toy in the_toys])
+    for i in range(the_number_of_toys):
+        if ((the_toys[i][0] + the_toys[i][1]) > total_enjoyment):
+            return False
+    return True
+
+for t in range (1, T + 1):
+    the_number_of_toys = int(input())
+    the_toys = []
+
+    for i in range(the_number_of_toys):
+        the_toys.append([int(s) for s in input().split(" ")])
+    
+    the_total_enjoyment = sum([toy[0] for toy in the_toys])
+    the_number_removed = 0
+
+    # For use inside the removing loop
+    the_tentative_toys = the_toys.copy()
+    the_tentative_enjoyment = the_total_enjoyment
+
+    has_removed = True
+    while has_removed:
+        has_removed = False
+        for i in the_tentative_toys:
+            if sum(i) > the_tentative_enjoyment:
+                the_number_removed += 1
+                has_removed = True
+                the_tentative_toys.remove(i)
+        the_tentative_enjoyment = sum([toy[0] for toy in the_tentative_toys])
+
+    if len(the_tentative_toys) != 0:
+        the_time_played = "INDEFINITELY"
+    else:
+        the_time_played = the_total_enjoyment
+        for i in the_toys:
+            
+
+    # print("After:")
+    # print(the_number_of_toys)
+    # print(the_toys)
+    # print(the_tentative_toys)
+    # print(the_total_enjoyment)
+
+    print(f"Case #{t}: {the_number_removed} {the_time_played}")

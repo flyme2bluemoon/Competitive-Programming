@@ -1,0 +1,29 @@
+Round A
+    ALLOCATION - test set passed
+    PLATES - sample passed
+    WORKOUT - sample passed
+    BUNDLING
+Round B
+    BIKE TOUR - test set passed
+    BUS ROUTES - test set passed
+    ROBOT PATH DECODING - test set passed
+    WANDERING ROBOT
+Round C
+    COUNTDOWN - sample passed
+    STABLE WALL
+    PERFECT SUBARRAY
+    CANDIES
+Round D
+    RECORD BREAKER - test set passed
+    ALIEN PIANO - test set passed
+    BEAUTY OF TREE
+    LOCKED DOOR
+Round E
+    LONGEST ARITHMETIC - test set passed
+    HIGH BUILDINGS - test set passed
+    TOYS - test set passed with TLE
+    GOLDEN STONE
+Round F
+    TBD
+Round G
+    TBD
